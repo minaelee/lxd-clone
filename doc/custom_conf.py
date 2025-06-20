@@ -145,8 +145,8 @@ html_baseurl = 'https://documentation.ubuntu.com/lxd/'
 # When configured with RTD variables, check for RTD environment so manual runs succeed:
 
 if 'READTHEDOCS_VERSION' in os.environ:
-    version = os.environ["READTHEDOCS_VERSION"]
-    sitemap_url_scheme = '{version}{link}'
+    rtd_version = os.environ["READTHEDOCS_VERSION"]
+    sitemap_url_scheme = '{rtd_version}{link}'
 else:
     sitemap_url_scheme = '{link}'
 
