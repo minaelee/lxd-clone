@@ -147,6 +147,7 @@ html_baseurl = 'https://documentation.ubuntu.com/lxd/'
 if 'READTHEDOCS_VERSION' in os.environ:
     rtd_version = os.environ["READTHEDOCS_VERSION"]
     sitemap_url_scheme = '{rtd_version}{link}'
+    version = 'testing'
 else:
     sitemap_url_scheme = '{link}'
 
